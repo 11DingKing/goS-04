@@ -149,8 +149,7 @@ func (a *Alarm) IsOverdue(now time.Time, timeout time.Duration) bool {
 	if a.Level != LevelOne {
 		return false
 	}
-	if a.Status == AlarmResolved || a.Status == AlarmEscalated ||
-		a.Status == AlarmAccepted || a.Status == AlarmInProgress {
+	if a.Status == AlarmResolved || a.Status == AlarmEscalated {
 		return false
 	}
 	base := a.ReviewedAt
