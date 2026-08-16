@@ -1,0 +1,10 @@
+{
+  "http_addr": ":58839",
+  "track_interval": "15m",
+  "clock_in_max_gap": "6h",
+  "level1_timeout": "2h",
+  "claim_timeout": "30m",
+  "accept_timeout": "30m",
+  "escalation_check_interval": "1m",
+  "timeout_check_interval": "1m"
+}
